@@ -132,4 +132,244 @@ const translations = {
     onlineFeat3Title: "لوحة تحكم العملاء", onlineFeat3Desc: "تتبع الطلبات والمدفوعات والسجل في مكان واحد.",
     contactTitle: "اتصل بنا", contactSub: "نحن هنا، بالطريقة التي تحتاجها.",
     supportChannels: "قنوات الدعم", whatsappLabel: "واتساب:", mobileLabel: "الجوال:", emailLabel: "البريد الإلكتروني:", addressLabel: "العنوان:",
-    faqTitle: "الأسئلة الشائعة", faq1Q: "كيف أحجز توصيلاً؟", faq1A: "عبر المنصة الإلكترونية، أو زر حجز توصيل، أو بالاتصال ب
+    faqTitle: "الأسئلة الشائعة", faq1Q: "كيف أحجز توصيلاً؟", faq1A: "عبر المنصة الإلكترونية، أو زر حجز توصيل، أو بالاتصال بالدعم.",
+    faq2Q: "ما المناطق التي تغطونها؟", faq2A: "جميع الإمارات السبع: دبي، أبوظبي، الشارقة، عجمان، رأس الخيمة، الفجيرة، أم القيوين.",
+    faq3Q: "هل تتكاملون مع متجري الإلكتروني؟", faq3A: "نعم، عبر تكامل API من خلال القسم الإلكتروني.",
+    faq4Q: "كيف أقدم شكوى؟", faq4A: "استخدم نموذج الاتصال مع وضع \"شكوى\" في الموضوع، أو اتصل بخط الدعم. تتلقى جميع الشكاوى رداً خلال 24 ساعة.",
+    contactFormTitle: "أرسل رسالة", formName: "الاسم الكامل", formEmail: "البريد الإلكتروني", formPhone: "الهاتف (اختياري)", formDept: "القسم",
+    formDeptPartnership: "الشراكات", formDeptBulk: "الطرود بالجملة", formDeptOnline: "الإلكتروني", formDeptGeneral: "عام",
+    formSubject: "الموضوع", formMessage: "الرسالة", formSubmit: "إرسال الرسالة", formSuccess: "✅ تم إرسال الرسالة! سنرد خلال ساعة عمل واحدة.",
+    portalsTitle: "بوابات العملاء والسائقين", portalsSub: "لوحات تحكم تجريبية للعرض.",
+    customerPortalBtn: "بوابة العميل", driverPortalBtn: "بوابة السائق",
+    dashMenu: "القائمة", dashOverview: "نظرة عامة", dashOrders: "إدارة الطلبات", dashPayments: "المدفوعات والسجل", dashProfile: "الملف الشخصي",
+    kpiActive: "طلبات نشطة", kpiDelivered: "تم التوصيل", kpiSpent: "هذا الشهر",
+    recentOrders: "الطلبات الأخيرة", tableId: "المعرف", tableDate: "التاريخ", tableStatus: "الحالة", tableService: "الخدمة",
+    statusDelivered: "تم التوصيل", statusTransit: "قيد النقل", statusPending: "قيد الانتظار",
+    dashToday: "مهام اليوم", dashRoute: "عرض المسار", dashEarnings: "الأرباح", dashHistoryDriver: "السجل",
+    kpiAssigned: "مكلف اليوم", kpiCompleted: "مكتمل هذا الأسبوع", kpiEarnings: "الأرباح",
+    assignedOrders: "الطلبات المكلفة", tableAddress: "العنوان", tableAction: "الإجراء", acceptBtn: "قبول", deliveredBtn: "تحديد كمُسلَّم",
+    footerCompany: "الشركة", footerContact: "الاتصال", footerCoverage: "التغطية", footerFollow: "تابعنا", footerLegal: "قانوني",
+    privacyPolicy: "سياسة الخصوصية", termsOfService: "شروط الخدمة", allRights: "جميع الحقوق محفوظة.", sloganFooter: "نوصل الثقة في كل ميل.",
+    privacyTitle: "سياسة الخصوصية",
+    privacyBody: `<p>آخر تحديث: نوفمبر 2026</p><p>في السويدي لخدمات التوصيل، نحن ملتزمون بحماية خصوصيتك. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحمايتنا لمعلوماتك عند استخدام خدماتنا.</p>
+    <h3>1. المعلومات التي نجمعها</h3><p>نجمع المعلومات التي تقدمها لنا مباشرة، مثل اسمك وبريدك الإلكتروني ورقم هاتفك وعناوين التوصيل ومعلومات الدفع عند حجز توصيل أو الاتصال بنا.</p>
+    <h3>2. كيف نستخدم معلوماتك</h3><p>نستخدم معلوماتك لتلبية طلبات التوصيل الخاصة بك، والتواصل معك بشأن طلباتك، ومعالجة المدفوعات، وتحسين خدماتنا.</p>
+    <h3>3. مشاركة معلوماتك</h3><p>قد نشارك معلوماتك مع مزودي خدمات خارجيين (مثل كيتا وكريم) فقط لغرض إتمام التوصيل. نحن لا نبيع بياناتك الشخصية.</p>
+    <h3>4. أمن البيانات</h3><p>نطبق تدابير أمنية معقولة لحماية معلوماتك الشخصية من الوصول غير المصرح به أو التغيير أو الإفصاح.</p>
+    <h3>5. اتصل بنا</h3><p>إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا على alswaididelivery@gmail.com.</p>`,
+    termsTitle: "الشروط والأحكام",
+    termsBody: `<p>آخر تحديث: نوفمبر 2026</p><p>مرحبًا بك في السويدي لخدمات التوصيل. باستخدامك لخدماتنا، فإنك توافق على هذه الشروط والأحكام.</p>
+    <h3>1. الخدمات</h3><p>نحن نقدم خدمات التوصيل والخدمات اللوجستية داخل الإمارات العربية المتحدة، بما في ذلك الطعام، والأدوية، والزهور، والشوكولاتة، والطرود بالجملة، وخدمات نقل المطاعم.</p>
+    <h3>2. مسؤوليات المستخدم</h3><p>أنت توافق على تقديم معلومات دقيقة بشأن مواقع الاستلام والتوصيل، ومحتويات الطرود، وتفاصيل الاتصال. وتوافق على عدم استخدام خدماتنا للعناصر غير القانونية أو المحظورة.</p>
+    <h3>3. التسعير والدفع</h3><p>تخضع أسعار خدماتنا للتغيير. يجب إتمام الدفع عند الحجز ما لم يتم الاتفاق على خلاف ذلك كتابيًا.</p>
+    <h3>4. حدود المسؤولية</h3><p>السويدي لخدمات التوصيل غير مسؤولة عن الأضرار غير المباشرة أو العرضية أو التبعية الناشئة عن استخدام خدماتنا.</p>
+    <h3>5. القانون الحاكم</h3><p>تخضع هذه الشروط لقوانين دولة الإمارات العربية المتحدة.</p>`
+  },
+  ur: {
+    brand: "السويدي", brandSub: "ڈیلیوری سروسز",
+    navHome: "ہوم", navAbout: "ہمارے بارے میں", navPartnership: "شراکت داری", navBulk: "بلک پارسلز",
+    navOnline: "آن لائن پلیٹ فارم", navContact: "رابطہ", navPortals: "پورٹلز",
+    heroTitle: "ہر میل پر اعتبار پہنچانا۔",
+    heroSub: "کھانے کی شراکت داری سے لے کر بلک پارسلز اور آن ڈیمانڈ آن لائن ڈیلیوری تک — السويدي پورے متحدہ عرب امارات میں وہ پہنچاتا ہے جو اہم ہے۔",
+    heroCta1: "ڈیلیوری بک کریں", heroCta2: "خدمات دیکھیں",
+    quickAccessTitle: "فوری رسائی", quickAccessSub: "آپ کو جو چاہیے، ایک ٹیپ پر۔",
+    quick1Title: "کھانے کی شراکت داری", quick1Desc: "کیٹا اور کریم کے ساتھ ڈیلیوری آپریشنز۔",
+    quick2Title: "بلک پارسلز", quick2Desc: "امارات بھر میں زیادہ حجم کی لاجسٹکس۔",
+    quick3Title: "آن لائن پلیٹ فارم", quick3Desc: "deliveryforless.vercel.app پر آن ڈیمانڈ ڈیلیوری بک کریں",
+    quick4Title: "اپنا آرڈر ٹریک کریں", quick4Desc: "کسٹمر اور ڈرائیور ڈیش بورڈز۔",
+    servicesTitle: "ہماری خدمات", servicesSub: "تین خصوصی محکمے۔ اعتبار کا ایک معیار۔",
+    svcPartnership: "شراکت داری کا محکمہ", svcPartnershipDesc: "کیٹا اور کریم کے ساتھ کھانے کی ڈیلیوری میں اسٹریٹجک تعاون۔",
+    svcBulk: "بلک پارسلز کا محکمہ", svcBulkDesc: "ریٹیلرز اور کارپوریٹس کے لیے شیڈول شدہ، زیادہ حجم کی کھیپ۔",
+    svcOnline: "آن لائن محکمہ", svcOnlineDesc: "آن لائن اسٹورز کے لیے API انٹیگریشن کے ساتھ آن ڈیمانڈ پلیٹ فارم۔",
+    learnMore: "مزید جانیں", ctaTitle: "شپنگ کے لیے تیار؟", ctaSub: "60 سیکنڈ میں کوٹ حاصل کریں۔ ہم ایک کاروباری گھنٹے میں جواب دیتے ہیں۔", ctaBtn: "ابھی رابطہ کریں",
+    aboutTitle: "السويدي ڈیلیوری سروسز کے بارے میں",
+    aboutBody: `<p><strong>السويدي ڈیلیوری سروسز</strong> ایک غیر متزلزل یقین کے ساتھ قائم کی گئی تھی: کہ ڈیلیوری صرف ایک پارسل کو ایک جگہ سے دوسری جگہ منتقل کرنا نہیں ہے، بلکہ ایک وعدہ منتقل کرنا ہے۔ متحدہ عرب امارات جیسی تیز رفتار مارکیٹ میں، ہم نے ایک ایسی کمپنی بنانے کا ارادہ کیا جو کبھی بھی ڈیلیوری کو صرف ایک لین دین نہ سمجھے۔</p>
+    <p>ہمارا سفر دبئی میں مقامی کاروباریوں کی خدمت کرنے والے ایک مرکوز آپریشن سے شروع ہوا۔ ان ابتدائی دنوں میں، بیڑا چھوٹا تھا، ٹیم قریبی تھی، اور ہر ڈیلیوری ذاتی تھی۔ ہم نے شہر کی تال سیکھی — وہ خاموش صبح کے اوقات جب بلک کھیپ کو حرکت کرنی ہوتی ہے، دوپہر کی رش جب کھانے کی شراکت داری درستگی کا مطالبہ کرتی ہے، اور رات گئے ای کامرس آرڈرز۔</p>
+    <p>آج، السويدي ڈیلیوری سروسز تین خصوصی محکموں کے ذریعے کام کرتی ہے۔ ہمارا <strong>شراکت داری محکمہ</strong> معروف فوڈ ڈیلیوری پلیٹ فارمز کے ساتھ تعاون کا انتظام کرتا ہے۔ ہمارا <strong>بلک پارسلز محکمہ</strong> ریٹیلرز اور کارپوریٹ گاہکوں کے لیے کھیپ سنبھالتا ہے۔ اور ہمارا <strong>آن لائن محکمہ</strong> ایک عمومی ڈیلیوری پلیٹ فارم چلاتا ہے۔</p>
+    <p>بھری مارکیٹ میں السويدي ڈیلیوری سروسز کو ممتاز کرنے والی چیز صرف ہماری خدمات کی وسعت نہیں ہے، بلکہ ہماری آپریشنل فلسفہ کی گہرائی ہے۔ ہم اپنے لوگوں میں سرمایہ کاری کرتے ہیں اور ایسی شراکت داریوں میں جو باہمی جوابدہی پر بنی ہیں۔</p>`,
+    ownerTestimonialTitle: "مالک کی گواہی", photoPlaceholder: "مالک کی تصویر",
+    ownerQuote: `"جب میں نے یہ کمپنی شروع کی، تو میرے پاس ایک وین اور ایک وعدہ تھا: کہ کوئی گاہک کبھی یہ نہ سوچے کہ اس کی ڈیلیوری کہاں ہے۔"`,
+    ownerName: "— بانی اور مالک، السويدي ڈیلیوری سروسز",
+    managerTitle: "محکمہ جات کے منتظمین کا پیغام",
+    manager1Quote: `"کیٹا اور کریم کے ساتھ کام کرنے کا مطلب ہے یو اے ای کی خوراک کی معیشت کی رفتار پر چلنا۔"`, manager1Name: "— شراکت داری محکمہ کے منتظم",
+    manager2Quote: `"بلک ڈیلیوری صرف رفتار کے بارے میں نہیں ہے — یہ ہم آہنگی کے بارے میں ہے۔"`, manager2Name: "— بلک پارسلز محکمہ کے منتظم",
+    manager3Quote: `"deliveryforless پلیٹ فارم اس لیے بنایا گیا کیونکہ ہم نے گاہکوں کی ضروریات اور مارکیٹ کی پیشکش کے درمیان فرق دیکھا۔"`, manager3Name: "— آن لائن محکمہ کے منتظم",
+    profileTitle: "کمپنی پروفائل", profileLegal: "قانونی نام:", profileHQ: "ہیڈ کوارٹر:", profileCoverage: "سروس کی کوریج:", profileCore: "بنیادی صلاحیتیں:", 
+    profileSpecialties: "خصوصی لاجسٹکس:", specialtiesText: "فارمیسی ڈیلیوری، پھولوں کی دکانیں، چاکلیٹ کی دکانیں، اور ریستوران کی نقل و حمل کی خدمات۔",
+    profileFleet: "بیڑا:", profileTech: "ٹیکنالوجی:",
+    partnershipTitle: "شراکت داری محکمہ", partnershipSub: "کیٹا اور کریم کے ساتھ یو اے ای کے فوڈ ڈیلیوری ماحولیاتی نظام کو طاقت دینا۔",
+    keetaDesc: "تمام سات امارات میں کیٹا کی تیز رفتار توسیع کی حمایت قابل اعتماد آخری میل ڈیلیوری صلاحیت کے ساتھ۔",
+    careemDesc: "کریم کے قائم کردہ سروس معیارات سے مطابقت رکھنے والی مستقل ڈیلیوری۔",
+    partnershipFactsTitle: "فوری حقائق", partnershipFact1: "2 بڑی فوڈ ڈیلیوری شراکت داریاں", partnershipFact2: "تمام امارات کی کوریج", partnershipFact3: "مصروف اوقات میں اضافی صلاحیت", partnershipFact4: "مخصوص شراکت داری سپورٹ لائن",
+    bulkTitle: "بلک پارسلز ڈیلیوری سروسز", bulkSub: "پیمانے پر یقین — ریٹیلرز، ہول سیلرز، اور کارپوریٹ گاہکوں کے لیے۔",
+    bulkBody: "بلک پارسلز صرف بہت سی چھوٹی ڈیلیوریاں نہیں ہیں۔ وہ اپنی ایک الگ لاجسٹک مہارت ہیں۔ چاہے آپ روزانہ ای کامرس آرڈرز بھیج رہے ہوں یا گوداموں کے درمیان اسٹاک منتقل کر رہے ہوں۔",
+    bulkFeat1Title: "شیڈول شدہ پک اپ", bulkFeat1Desc: "آپ کی آپریشنل تال کے گرد بنائے گئے جمع کرنے کے شیڈول۔",
+    bulkFeat2Title: "بین الامارات روٹنگ", bulkFeat2Desc: "زیادہ حجم کے لیے موثر استحکام اور روٹنگ۔",
+    bulkFeat3Title: "مینی فیسٹ مرئیت", bulkFeat3Desc: "کسی بھی لمحے جانیں کہ کیا منتقل ہو چکا ہے اور کیا باقی ہے۔",
+    onlineTitle: "آن لائن محکمہ — جنرل ڈیلیوری پلیٹ فارم", onlineSub: "آپ کی ڈیلیوری کی ضروریات، ایک پلیٹ فارم۔",
+    onlineBody: "آن لائن محکمہ deliveryforless.vercel.app پر ہمارا جنرل ڈیلیوری پلیٹ فارم چلاتا ہے — ایک ڈیجیٹل گیٹ وے جو افراد اور چھوٹے کاروباریوں کے لیے ڈیزائن کیا گیا ہے۔",
+    onlineFeat1Title: "فوری بکنگ", onlineFeat1Desc: "کسی بھی ڈیوائس سے سیکنڈوں میں ڈیلیوری بک کریں۔",
+    onlineFeat2Title: "آن لائن اسٹورز کے لیے API", onlineFeat2Desc: "آرڈرز براہ راست ہمارے ڈسپیچ سسٹم میں آتے ہیں۔",
+    onlineFeat3Title: "کسٹمر ڈیش بورڈ", onlineFeat3Desc: "ایک جگہ پر آرڈرز، ادائیگیاں، اور تاریخ ٹریک کریں۔",
+    contactTitle: "ہم سے رابطہ کریں", contactSub: "ہم یہاں ہیں، جس طرح بھی آپ کو ضرورت ہو۔",
+    supportChannels: "سپورٹ چینلز", whatsappLabel: "واٹس ایپ:", mobileLabel: "موبائل:", emailLabel: "ای میل:", addressLabel: "پتہ:",
+    faqTitle: "عمومی سوالات", faq1Q: "میں ڈیلیوری کیسے بک کروں؟", faq1A: "آن لائن پلیٹ فارم، ڈیلیوری بک کریں بٹن، یا سپورٹ سے رابطہ کر کے۔",
+    faq2Q: "آپ کون سے علاقے کور کرتے ہیں؟", faq2A: "تمام سات امارات: دبئی، ابوظہبی، شارجہ، عجمان، راس الخیمہ، فجیرہ، ام القوین۔",
+    faq3Q: "کیا آپ میرے آن لائن اسٹور کے ساتھ انٹیگریٹ ہیں؟", faq3A: "جی ہاں، آن لائن محکمہ کے ذریعے API انٹیگریشن کے ذریعے۔",
+    faq4Q: "میں شکایت کیسے درج کروں؟", faq4A: "موضوع میں \"شکایت\" لکھ کر رابطہ فارم استعمال کریں، یا سپورٹ لائن پر کال کریں۔",
+    contactFormTitle: "پیغام بھیجیں", formName: "پورا نام", formEmail: "ای میل", formPhone: "فون (اختیاری)", formDept: "محکمہ",
+    formDeptPartnership: "شراکت داری", formDeptBulk: "بلک پارسلز", formDeptOnline: "آن لائن", formDeptGeneral: "عمومی",
+    formSubject: "موضوع", formMessage: "پیغام", formSubmit: "پیغام بھیجیں", formSuccess: "✅ پیغام بھیج دیا گیا! ہم ایک کاروباری گھنٹے میں جواب دیں گے۔",
+    portalsTitle: "کسٹمر اور ڈرائیور پورٹلز", portalsSub: "مظاہرے کے لیے فرضی ڈیش بورڈز۔",
+    customerPortalBtn: "کسٹمر پورٹل", driverPortalBtn: "ڈرائیور پورٹل",
+    dashMenu: "مینو", dashOverview: "جائزہ", dashOrders: "آرڈر مینجمنٹ", dashPayments: "ادائیگیاں اور تاریخ", dashProfile: "پروفائل",
+    kpiActive: "فعال آرڈرز", kpiDelivered: "ڈیلیور شدہ", kpiSpent: "اس ماہ",
+    recentOrders: "حالیہ آرڈرز", tableId: "شناخت", tableDate: "تاریخ", tableStatus: "حیثیت", tableService: "سروس",
+    statusDelivered: "ڈیلیور شدہ", statusTransit: "ٹرانزٹ میں", statusPending: "زیر التواء",
+    dashToday: "آج کے اسائنمنٹس", dashRoute: "روٹ کا نظارہ", dashEarnings: "کمائی", dashHistoryDriver: "تاریخ",
+    kpiAssigned: "آج تفویض شدہ", kpiCompleted: "اس ہفتے مکمل", kpiEarnings: "کمائی",
+    assignedOrders: "تفویض شدہ آرڈرز", tableAddress: "پتہ", tableAction: "کارروائی", acceptBtn: "قبول کریں", deliveredBtn: "ڈیلیور شدہ نشان زد کریں",
+    footerCompany: "کمپنی", footerContact: "رابطہ", footerCoverage: "کوریج", footerFollow: "ہمیں فالو کریں", footerLegal: "قانونی",
+    privacyPolicy: "رازداری کی پالیسی", termsOfService: "شرائط و ضوابط", allRights: "جملہ حقوق محفوظ ہیں۔", sloganFooter: "ہر میل پر اعتبار پہنچانا۔",
+    privacyTitle: "رازداری کی پالیسی",
+    privacyBody: `<p>آخری تازہ کاری: نومبر 2026</p><p>السويدي ڈیلیوری سروسز میں، ہم آپ کی رازداری کے تحفظ کے لیے پرعزم ہیں۔ یہ رازداری کی پالیسی بتاتی ہے کہ ہم آپ کی معلومات کیسے جمع، استعمال اور محفوظ کرتے ہیں۔</p>
+    <h3>1. ہم کون سی معلومات جمع کرتے ہیں</h3><p>ہم وہ معلومات جمع کرتے ہیں جو آپ ہمیں براہ راست فراہم کرتے ہیں، جیسے آپ کا نام، ای میل، فون نمبر، ڈیلیوری کا پتہ، اور ادائیگی کی معلومات۔</p>
+    <h3>2. ہم آپ کی معلومات کیسے استعمال کرتے ہیں</h3><p>ہم آپ کی معلومات آپ کی ڈیلیوری کی درخواستوں کو پورا کرنے، آپ سے رابطہ کرنے، اور ادائیگیوں پر کارروائی کرنے کے لیے استعمال کرتے ہیں۔</p>
+    <h3>3. معلومات کا اشتراک</h3><p>ہم صرف ڈیلیوری مکمل کرنے کے مقصد سے تھرڈ پارٹی سروس فراہم کنندگان کے ساتھ معلومات کا اشتراک کر سکتے ہیں۔ ہم آپ کا ڈیٹا فروخت نہیں کرتے۔</p>
+    <h3>4. ڈیٹا کی حفاظت</h3><p>ہم آپ کی ذاتی معلومات کو غیر مجاز رسائی سے بچانے کے لیے مناسب حفاظتی اقدامات کرتے ہیں۔</p>
+    <h3>5. ہم سے رابطہ کریں</h3><p>اگر اس پالیسی کے بارے میں کوئی سوال ہے، تو alswaididelivery@gmail.com پر رابطہ کریں۔</p>`,
+    termsTitle: "شرائط و ضوابط",
+    termsBody: `<p>آخری تازہ کاری: نومبر 2026</p><p>السويدي ڈیلیوری سروسز میں خوش آمدید۔ ہماری خدمات استعمال کر کے، آپ ان شرائط و ضوابط سے اتفاق کرتے ہیں۔</p>
+    <h3>1. خدمات</h3><p>ہم متحدہ عرب امارات کے اندر ڈیلیوری اور لاجسٹک خدمات فراہم کرتے ہیں، بشمول کھانا، فارمیسی، پھول، چاکلیٹ، بلک پارسلز، اور ریستوران کی نقل و حمل۔</p>
+    <h3>2. صارف کی ذمہ داریاں</h3><p>آپ پک اپ اور ڈیلیوری کے مقامات، پیکیج کے مواد، اور رابطے کی تفصیلات کے بارے میں درست معلومات فراہم کرنے پر متفق ہیں۔ آپ غیر قانونی اشیاء کے لیے خدمات استعمال نہیں کریں گے۔</p>
+    <h3>3. قیمتوں کا تعین اور ادائیگی</h3><p>قیمتوں میں تبدیلی ہو سکتی ہے۔ بکنگ کے وقت ادائیگی مکمل کرنی ہوگی جب تک کہ تحریری طور پر اتفاق نہ ہو۔</p>
+    <h3>4. ذمہ داری کی حد</h3><p>السويدي ڈیلیوری سروسز بالواسطہ یا حادثاتی نقصانات کے لیے ذمہ دار نہیں ہے۔</p>
+    <h3>5. قابل اطلاق قانون</h3><p>یہ شرائط متحدہ عرب امارات کے قوانین کے تحت چلتی ہیں۔</p>`
+  }
+};
+
+/* ============================================================
+   2. STATE & UTILITIES
+============================================================ */
+let currentLang = 'en';
+let currentPage = 'home';
+
+function t(key) {
+  return translations[currentLang]?.[key] ?? translations.en[key] ?? key;
+}
+
+function applyTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const val = t(key);
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = val;
+    } else {
+      el.innerHTML = val;
+    }
+  });
+  
+  // Inject long-form HTML bodies dynamically
+  if (currentPage === 'about') {
+    document.querySelector('#page-about .about-text').innerHTML = t('aboutBody');
+  } else if (currentPage === 'privacy') {
+    document.querySelector('#page-privacy .about-text').innerHTML = t('privacyBody');
+  } else if (currentPage === 'terms') {
+    document.querySelector('#page-terms .about-text').innerHTML = t('termsBody');
+  }
+}
+
+function setLanguage(lang) {
+  currentLang = lang;
+  const isRTL = (lang === 'ar' || lang === 'ur');
+  
+  document.documentElement.lang = lang;
+  document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+  document.body.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+  document.body.setAttribute('data-lang', lang);
+  
+  applyTranslations();
+  document.getElementById('langSelect').value = lang;
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  document.getElementById('themeToggle').textContent = theme === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('theme', theme);
+}
+
+function navigate(page) {
+  currentPage = page;
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + page);
+  if (target) target.classList.add('active');
+  
+  document.querySelectorAll('#mainNav button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.page === page);
+  });
+
+  // Close mobile menu on selection
+  document.getElementById('mainNav').classList.remove('active');
+  
+  // Inject long form content on navigation
+  if (page === 'about') {
+    document.querySelector('#page-about .about-text').innerHTML = t('aboutBody');
+  } else if (page === 'privacy') {
+    document.querySelector('#page-privacy .about-text').innerHTML = t('privacyBody');
+  } else if (page === 'terms') {
+    document.querySelector('#page-terms .about-text').innerHTML = t('termsBody');
+  }
+  
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function bookDelivery() {
+  window.open('https://deliveryforless.vercel.app', '_blank');
+}
+
+function showPortal(type) {
+  document.getElementById('portal-customer').style.display = type === 'customer' ? 'grid' : 'none';
+  document.getElementById('portal-driver').style.display = type === 'driver' ? 'grid' : 'none';
+  document.querySelectorAll('.portal-tabs .btn-outline').forEach((btn, i) => {
+    btn.classList.toggle('btn-primary', (i === 0 && type === 'customer') || (i === 1 && type === 'driver'));
+  });
+}
+
+function handleContact(e) {
+  e.preventDefault();
+  const status = document.getElementById('formStatus');
+  status.style.display = 'block';
+  status.textContent = t('formSuccess');
+  e.target.reset();
+  setTimeout(() => { status.style.display = 'none'; }, 5000);
+}
+
+/* ============================================================
+   3. INITIALISATION
+============================================================ */
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  setTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
+
+  setLanguage('en');
+
+  document.querySelectorAll('#mainNav button').forEach(btn => {
+    btn.addEventListener('click', () => navigate(btn.dataset.page));
+  });
+
+  // Mobile Hamburger Toggle
+  document.getElementById('hamburgerBtn').addEventListener('click', () => {
+    document.getElementById('mainNav').classList.toggle('active');
+  });
+
+  document.getElementById('langSelect').addEventListener('change', (e) => setLanguage(e.target.value));
+
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+  });
+
+  // Initialize About page content on load
+  document.querySelector('#page-about .about-text').innerHTML = t('aboutBody');
+});
