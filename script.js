@@ -1,8 +1,11 @@
+/* ============================================================
+   1. I18N TRANSLATIONS
+============================================================ */
 const translations = {
   en: {
     brand: "ALSUWEDEY", brandSub: "Delivery Services",
     navHome: "Home", navAbout: "About Us", navPartnership: "Partnership", navBulk: "Bulk Parcels",
-    navOnline: "Online Platform", navContact: "Contact", navPortals: "Portals", navJoin: "Join Us",
+    navOnline: "Online Platform", navContact: "Contact", navPortals: "Portals",
     heroTitle: "Delivering Trust, Every Mile.",
     heroSub: "From food partnerships to bulk parcels and on‑demand online delivery — ALSUWEDEY moves what matters across the UAE.",
     heroCta1: "Book a Delivery", heroCta2: "Explore Services",
@@ -66,12 +69,25 @@ const translations = {
     assignedOrders: "Assigned Orders", tableAddress: "Address", tableAction: "Action", acceptBtn: "Accept", deliveredBtn: "Mark Delivered",
     footerCompany: "Company", footerContact: "Contact", footerCoverage: "Coverage", footerFollow: "Follow Us", footerLegal: "Legal",
     privacyPolicy: "Privacy Policy", termsOfService: "Terms of Service", allRights: "All rights reserved.", sloganFooter: "Delivering Trust, Every Mile.",
-    daTitle: "Driver (DA) Joining Request", partnerTitle: "Partnership Request"
+    privacyTitle: "Privacy Policy",
+    privacyBody: `<p>Last updated: November 2026</p><p>At ALSUWEDEY Delivery Services LLC, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services.</p>
+    <h3>1. Information We Collect</h3><p>We collect information you provide directly to us, such as your name, email address, phone number, delivery addresses, and payment information when you book a delivery or contact us.</p>
+    <h3>2. How We Use Your Information</h3><p>We use your information to fulfill your delivery requests, communicate with you about your orders, process payments, and improve our services. We may also use your information for marketing purposes, which you can opt out of at any time.</p>
+    <h3>3. Sharing Your Information</h3><p>We may share your information with third-party service providers (such as KEETA and CAREEM) strictly for the purpose of fulfilling your delivery. We do not sell your personal data.</p>
+    <h3>4. Data Security</h3><p>We implement reasonable security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
+    <h3>5. Contact Us</h3><p>If you have any questions about this Privacy Policy, please contact us at alswaididelivery@gmail.com.</p>`,
+    termsTitle: "Terms & Conditions of Service",
+    termsBody: `<p>Last updated: November 2026</p><p>Welcome to ALSUWEDEY Delivery Services LLC. By using our services, you agree to these Terms & Conditions.</p>
+    <h3>1. Services</h3><p>We provide delivery and logistics services within the United Arab Emirates, including food, pharmacy, flowers, chocolates, bulk parcels, and restaurant moving services.</p>
+    <h3>2. User Responsibilities</h3><p>You agree to provide accurate information regarding pickup and delivery locations, package contents, and contact details. You agree not to use our services for illegal or prohibited items.</p>
+    <h3>3. Pricing and Payment</h3><p>Prices for our services are subject to change. Payment must be completed upon booking unless otherwise agreed upon in writing.</p>
+    <h3>4. Limitation of Liability</h3><p>ALSUWEDEY Delivery Services LLC is not liable for indirect, incidental, or consequential damages arising from the use of our services. Our liability for any claim is limited to the fees paid for the specific delivery.</p>
+    <h3>5. Governing Law</h3><p>These terms are governed by the laws of the United Arab Emirates.</p>`,
   },
   ar: {
     brand: "السويدي", brandSub: "لخدمات التوصيل",
     navHome: "الرئيسية", navAbout: "من نحن", navPartnership: "الشراكات", navBulk: "الطرود بالجملة",
-    navOnline: "المنصة الإلكترونية", navContact: "اتصل بنا", navPortals: "البوابات", navJoin: "انضم إلينا",
+    navOnline: "المنصة الإلكترونية", navContact: "اتصل بنا", navPortals: "البوابات",
     heroTitle: "نوصل الثقة في كل ميل.",
     heroSub: "من شراكات الطعام إلى الطرود بالجملة والتوصيل الإلكتروني عند الطلب — السويدي تنقل ما يهم في جميع أنحاء الإمارات.",
     heroCta1: "احجز توصيلاً", heroCta2: "استكشف الخدمات",
@@ -116,166 +132,4 @@ const translations = {
     onlineFeat3Title: "لوحة تحكم العملاء", onlineFeat3Desc: "تتبع الطلبات والمدفوعات والسجل في مكان واحد.",
     contactTitle: "اتصل بنا", contactSub: "نحن هنا، بالطريقة التي تحتاجها.",
     supportChannels: "قنوات الدعم", whatsappLabel: "واتساب:", mobileLabel: "الجوال:", emailLabel: "البريد الإلكتروني:", addressLabel: "العنوان:",
-    faqTitle: "الأسئلة الشائعة", faq1Q: "كيف أحجز توصيلاً؟", faq1A: "عبر المنصة الإلكترونية، أو زر حجز توصيل، أو بالاتصال بالدعم.",
-    faq2Q: "ما المناطق التي تغطونها؟", faq2A: "جميع الإمارات السبع: دبي، أبوظبي، الشارقة، عجمان، رأس الخيمة، الفجيرة، أم القيوين.",
-    faq3Q: "هل تتكاملون مع متجري الإلكتروني؟", faq3A: "نعم، عبر تكامل API من خلال القسم الإلكتروني.",
-    faq4Q: "كيف أقدم شكوى؟", faq4A: "استخدم نموذج الاتصال مع وضع \"شكوى\" في الموضوع، أو اتصل بخط الدعم. تتلقى جميع الشكاوى رداً خلال 24 ساعة.",
-    contactFormTitle: "أرسل رسالة", formName: "الاسم الكامل", formEmail: "البريد الإلكتروني", formPhone: "الهاتف (اختياري)", formDept: "القسم",
-    formDeptPartnership: "الشراكات", formDeptBulk: "الطرود بالجملة", formDeptOnline: "الإلكتروني", formDeptGeneral: "عام",
-    formSubject: "الموضوع", formMessage: "الرسالة", formSubmit: "إرسال الرسالة", formSuccess: "✅ تم إرسال الرسالة! سنرد خلال ساعة عمل واحدة.",
-    portalsTitle: "بوابات العملاء والسائقين", portalsSub: "لوحات تحكم تجريبية للعرض.",
-    customerPortalBtn: "بوابة العميل", driverPortalBtn: "بوابة السائق",
-    dashMenu: "القائمة", dashOverview: "نظرة عامة", dashOrders: "إدارة الطلبات", dashPayments: "المدفوعات والسجل", dashProfile: "الملف الشخصي",
-    kpiActive: "طلبات نشطة", kpiDelivered: "تم التوصيل", kpiSpent: "هذا الشهر",
-    recentOrders: "الطلبات الأخيرة", tableId: "المعرف", tableDate: "التاريخ", tableStatus: "الحالة", tableService: "الخدمة",
-    statusDelivered: "تم التوصيل", statusTransit: "قيد النقل", statusPending: "قيد الانتظار",
-    dashToday: "مهام اليوم", dashRoute: "عرض المسار", dashEarnings: "الأرباح", dashHistoryDriver: "السجل",
-    kpiAssigned: "مكلف اليوم", kpiCompleted: "مكتمل هذا الأسبوع", kpiEarnings: "الأرباح",
-    assignedOrders: "الطلبات المكلفة", tableAddress: "العنوان", tableAction: "الإجراء", acceptBtn: "قبول", deliveredBtn: "تحديد كمُسلَّم",
-    footerCompany: "الشركة", footerContact: "الاتصال", footerCoverage: "التغطية", footerFollow: "تابعنا", footerLegal: "قانوني",
-    privacyPolicy: "سياسة الخصوصية", termsOfService: "شروط الخدمة", allRights: "جميع الحقوق محفوظة.", sloganFooter: "نوصل الثقة في كل ميل.",
-    daTitle: "طلب انضمام سائق", partnerTitle: "طلب شراكة"
-  },
-  ur: {
-    brand: "السويدي", brandSub: "ڈیلیوری سروسز",
-    navHome: "ہوم", navAbout: "ہمارے بارے میں", navPartnership: "شراکت داری", navBulk: "بلک پارسلز",
-    navOnline: "آن لائن پلیٹ فارم", navContact: "رابطہ", navPortals: "پورٹلز", navJoin: "ہمارے ساتھ شامل ہوں",
-    heroTitle: "ہر میل پر اعتبار پہنچانا۔",
-    heroSub: "کھانے کی شراکت داری سے لے کر بلک پارسلز اور آن ڈیمانڈ آن لائن ڈیلیوری تک۔",
-    heroCta1: "ڈیلیوری بک کریں", heroCta2: "خدمات دیکھیں",
-    quickAccessTitle: "فوری رسائی", quickAccessSub: "آپ کو جو چاہیے، ایک ٹیپ پر۔",
-    quick1Title: "کھانے کی شراکت داری", quick1Desc: "کیٹا اور کریم کے ساتھ ڈیلیوری آپریشنز۔",
-    quick2Title: "بلک پارسلز", quick2Desc: "امارات بھر میں زیادہ حجم کی لاجسٹکس۔",
-    quick3Title: "آن لائن پلیٹ فارم", quick3Desc: "deliveryforless.vercel.app پر آن ڈیمانڈ ڈیلیوری بک کریں",
-    quick4Title: "اپنا آرڈر ٹریک کریں", quick4Desc: "کسٹمر اور ڈرائیور ڈیش بورڈز۔",
-    servicesTitle: "ہماری خدمات", servicesSub: "تین خصوصی محکمے۔ اعتبار کا ایک معیار۔",
-    svcPartnership: "شراکت داری کا محکمہ", svcPartnershipDesc: "کیٹا اور کریم کے ساتھ کھانے کی ڈیلیوری میں اسٹریٹجک تعاون۔",
-    svcBulk: "بلک پارسلز کا محکمہ", svcBulkDesc: "ریٹیلرز اور کارپوریٹس کے لیے شیڈول شدہ، زیادہ حجم کی کھیپ۔",
-    svcOnline: "آن لائن محکمہ", svcOnlineDesc: "آن لائن اسٹورز کے لیے API انٹیگریشن کے ساتھ آن ڈیمانڈ پلیٹ فارم۔",
-    learnMore: "مزید جانیں", ctaTitle: "شپنگ کے لیے تیار؟", ctaSub: "60 سیکنڈ میں کوٹ حاصل کریں۔ ہم ایک کاروباری گھنٹے میں جواب دیتے ہیں۔", ctaBtn: "ابھی رابطہ کریں",
-    aboutTitle: "السويدي ڈیلیوری سروسز کے بارے میں",
-    aboutBody: `<p><strong>السويدي ڈیلیوری سروسز</strong> ایک غیر متزلزل یقین کے ساتھ قائم کی گئی تھی: کہ ڈیلیوری صرف ایک پارسل کو ایک جگہ سے دوسری جگہ منتقل کرنا نہیں ہے، بلکہ ایک وعدہ منتقل کرنا ہے۔ متحدہ عرب امارات جیسی تیز رفتار مارکیٹ میں، ہم نے ایک ایسی کمپنی بنانے کا ارادہ کیا جو کبھی بھی ڈیلیوری کو صرف ایک لین دین نہ سمجھے۔</p>
-    <p>ہمارا سفر دبئی میں مقامی کاروباریوں کی خدمت کرنے والے ایک مرکوز آپریشن سے شروع ہوا۔ ان ابتدائی دنوں میں، بیڑا چھوٹا تھا، ٹیم قریبی تھی، اور ہر ڈیلیوری ذاتی تھی۔ ہم نے شہر کی تال سیکھی — وہ خاموش صبح کے اوقات جب بلک کھیپ کو حرکت کرنی ہوتی ہے، دوپہر کی رش جب کھانے کی شراکت داری درستگی کا مطالبہ کرتی ہے، اور رات گئے ای کامرس آرڈرز۔</p>
-    <p>آج، السويدي ڈیلیوری سروسز تین خصوصی محکموں کے ذریعے کام کرتی ہے۔ ہمارا <strong>شراکت داری محکمہ</strong> معروف فوڈ ڈیلیوری پلیٹ فارمز کے ساتھ تعاون کا انتظام کرتا ہے۔ ہمارا <strong>بلک پارسلز محکمہ</strong> ریٹیلرز اور کارپوریٹ گاہکوں کے لیے کھیپ سنبھالتا ہے۔ اور ہمارا <strong>آن لائن محکمہ</strong> ایک عمومی ڈیلیوری پلیٹ فارم چلاتا ہے۔</p>
-    <p>بھری مارکیٹ میں السويدي ڈیلیوری سروسز کو ممتاز کرنے والی چیز صرف ہماری خدمات کی وسعت نہیں ہے، بلکہ ہماری آپریشنل فلسفہ کی گہرائی ہے۔ ہم اپنے لوگوں میں سرمایہ کاری کرتے ہیں اور ایسی شراکت داریوں میں جو باہمی جوابدہی پر بنی ہیں۔</p>`,
-    ownerTestimonialTitle: "مالک کی گواہی", photoPlaceholder: "مالک کی تصویر",
-    ownerQuote: `"جب میں نے یہ کمپنی شروع کی، تو میرے پاس ایک وین اور ایک وعدہ تھا: کہ کوئی گاہک کبھی یہ نہ سوچے کہ اس کی ڈیلیوری کہاں ہے۔"`,
-    ownerName: "— بانی اور مالک، السويدي ڈیلیوری سروسز",
-    managerTitle: "محکمہ جات کے منتظمین کا پیغام",
-    manager1Quote: `"کیٹا اور کریم کے ساتھ کام کرنے کا مطلب ہے یو اے ای کی خوراک کی معیشت کی رفتار پر چلنا۔"`, manager1Name: "— شراکت داری محکمہ کے منتظم",
-    manager2Quote: `"بلک ڈیلیوری صرف رفتار کے بارے میں نہیں ہے — یہ ہم آہنگی کے بارے میں ہے۔"`, manager2Name: "— بلک پارسلز محکمہ کے منتظم",
-    manager3Quote: `"deliveryforless پلیٹ فارم اس لیے بنایا گیا کیونکہ ہم نے گاہکوں کی ضروریات اور مارکیٹ کی پیشکش کے درمیان فرق دیکھا۔"`, manager3Name: "— آن لائن محکمہ کے منتظم",
-    profileTitle: "کمپنی پروفائل", profileLegal: "قانونی نام:", profileHQ: "ہیڈ کوارٹر:", profileCoverage: "سروس کی کوریج:", profileCore: "بنیادی صلاحیتیں:", 
-    profileSpecialties: "خصوصی لاجسٹکس:", specialtiesText: "فارمیسی ڈیلیوری، پھولوں کی دکانیں، چاکلیٹ کی دکانیں، اور ریستوران کی نقل و حمل کی خدمات۔",
-    profileFleet: "بیڑا:", profileTech: "ٹیکنالوجی:",
-    partnershipTitle: "شراکت داری محکمہ", partnershipSub: "کیٹا اور کریم کے ساتھ یو اے ای کے فوڈ ڈیلیوری ماحولیاتی نظام کو طاقت دینا۔",
-    keetaDesc: "تمام سات امارات میں کیٹا کی تیز رفتار توسیع کی حمایت قابل اعتماد آخری میل ڈیلیوری صلاحیت کے ساتھ۔",
-    careemDesc: "کریم کے قائم کردہ سروس معیارات سے مطابقت رکھنے والی مستقل ڈیلیوری۔",
-    partnershipFactsTitle: "فوری حقائق", partnershipFact1: "2 بڑی فوڈ ڈیلیوری شراکت داریاں", partnershipFact2: "تمام امارات کی کوریج", partnershipFact3: "مصروف اوقات میں اضافی صلاحیت", partnershipFact4: "مخصوص شراکت داری سپورٹ لائن",
-    bulkTitle: "بلک پارسلز ڈیلیوری سروسز", bulkSub: "پیمانے پر یقین — ریٹیلرز، ہول سیلرز، اور کارپوریٹ گاہکوں کے لیے۔",
-    bulkBody: "بلک پارسلز صرف بہت سی چھوٹی ڈیلیوریاں نہیں ہیں۔ وہ اپنی ایک الگ لاجسٹک مہارت ہیں۔ چاہے آپ روزانہ ای کامرس آرڈرز بھیج رہے ہوں یا گوداموں کے درمیان اسٹاک منتقل کر رہے ہوں۔",
-    bulkFeat1Title: "شیڈول شدہ پک اپ", bulkFeat1Desc: "آپ کی آپریشنل تال کے گرد بنائے گئے جمع کرنے کے شیڈول۔",
-    bulkFeat2Title: "بین الامارات روٹنگ", bulkFeat2Desc: "زیادہ حجم کے لیے موثر استحکام اور روٹنگ۔",
-    bulkFeat3Title: "مینی فیسٹ مرئیت", bulkFeat3Desc: "کسی بھی لمحے جانیں کہ کیا منتقل ہو چکا ہے اور کیا باقی ہے۔",
-    onlineTitle: "آن لائن محکمہ — جنرل ڈیلیوری پلیٹ فارم", onlineSub: "آپ کی ڈیلیوری کی ضروریات، ایک پلیٹ فارم۔",
-    onlineBody: "آن لائن محکمہ deliveryforless.vercel.app پر ہمارا جنرل ڈیلیوری پلیٹ فارم چلاتا ہے — ایک ڈیجیٹل گیٹ وے جو افراد اور چھوٹے کاروباریوں کے لیے ڈیزائن کیا گیا ہے۔",
-    onlineFeat1Title: "فوری بکنگ", onlineFeat1Desc: "کسی بھی ڈیوائس سے سیکنڈوں میں ڈیلیوری بک کریں۔",
-    onlineFeat2Title: "آن لائن اسٹورز کے لیے API", onlineFeat2Desc: "آرڈرز براہ راست ہمارے ڈسپیچ سسٹم میں آتے ہیں۔",
-    onlineFeat3Title: "کسٹمر ڈیش بورڈ", onlineFeat3Desc: "ایک جگہ پر آرڈرز، ادائیگیاں، اور تاریخ ٹریک کریں۔",
-    contactTitle: "ہم سے رابطہ کریں", contactSub: "ہم یہاں ہیں، جس طرح بھی آپ کو ضرورت ہو۔",
-    supportChannels: "سپورٹ چینلز", whatsappLabel: "واٹس ایپ:", mobileLabel: "موبائل:", emailLabel: "ای میل:", addressLabel: "پتہ:",
-    faqTitle: "عمومی سوالات", faq1Q: "میں ڈیلیوری کیسے بک کروں؟", faq1A: "آن لائن پلیٹ فارم، ڈیلیوری بک کریں بٹن، یا سپورٹ سے رابطہ کر کے۔",
-    faq2Q: "آپ کون سے علاقے کور کرتے ہیں؟", faq2A: "تمام سات امارات: دبئی، ابوظہبی، شارجہ، عجمان، راس الخیمہ، فجیرہ، ام القوین۔",
-    faq3Q: "کیا آپ میرے آن لائن اسٹور کے ساتھ انٹیگریٹ ہیں؟", faq3A: "جی ہاں، آن لائن محکمہ کے ذریعے API انٹیگریشن کے ذریعے۔",
-    faq4Q: "میں شکایت کیسے درج کروں؟", faq4A: "موضوع میں \"شکایت\" لکھ کر رابطہ فارم استعمال کریں، یا سپورٹ لائن پر کال کریں۔",
-    contactFormTitle: "پیغام بھیجیں", formName: "پورا نام", formEmail: "ای میل", formPhone: "فون (اختیاری)", formDept: "محکمہ",
-    formDeptPartnership: "شراکت داری", formDeptBulk: "بلک پارسلز", formDeptOnline: "آن لائن", formDeptGeneral: "عمومی",
-    formSubject: "موضوع", formMessage: "پیغام", formSubmit: "پیغام بھیجیں", formSuccess: "✅ پیغام بھیج دیا گیا! ہم ایک کاروباری گھنٹے میں جواب دیں گے۔",
-    portalsTitle: "کسٹمر اور ڈرائیور پورٹلز", portalsSub: "مظاہرے کے لیے فرضی ڈیش بورڈز۔",
-    customerPortalBtn: "کسٹمر پورٹل", driverPortalBtn: "ڈرائیور پورٹل",
-    dashMenu: "مینو", dashOverview: "جائزہ", dashOrders: "آرڈر مینجمنٹ", dashPayments: "ادائیگیاں اور تاریخ", dashProfile: "پروفائل",
-    kpiActive: "فعال آرڈرز", kpiDelivered: "ڈیلیور شدہ", kpiSpent: "اس ماہ",
-    recentOrders: "حالیہ آرڈرز", tableId: "شناخت", tableDate: "تاریخ", tableStatus: "حیثیت", tableService: "سروس",
-    statusDelivered: "ڈیلیور شدہ", statusTransit: "ٹرانزٹ میں", statusPending: "زیر التواء",
-    dashToday: "آج کے اسائنمنٹس", dashRoute: "روٹ کا نظارہ", dashEarnings: "کمائی", dashHistoryDriver: "تاریخ",
-    kpiAssigned: "آج تفویض شدہ", kpiCompleted: "اس ہفتے مکمل", kpiEarnings: "کمائی",
-    assignedOrders: "تفویض شدہ آرڈرز", tableAddress: "پتہ", tableAction: "کارروائی", acceptBtn: "قبول کریں", deliveredBtn: "ڈیلیور شدہ نشان زد کریں",
-    footerCompany: "کمپنی", footerContact: "رابطہ", footerCoverage: "کوریج", footerFollow: "ہمیں فالو کریں", footerLegal: "قانونی",
-    privacyPolicy: "رازداری کی پالیسی", termsOfService: "شرائط و ضوابط", allRights: "جملہ حقوق محفوظ ہیں۔", sloganFooter: "ہر میل پر اعتبار پہنچانا۔",
-    daTitle: "ڈرائیور کی درخواست", partnerTitle: "شراکت داری کی درخواست"
-  }
-};
-
-let currentLang = 'en';
-let currentPage = 'home';
-
-function t(key) { return translations[currentLang]?.[key] ?? translations.en[key] ?? key; }
-
-function applyTranslations() {
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const val = t(key);
-    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = val;
-    else el.innerHTML = val;
-  });
-  if (currentPage === 'about') document.querySelector('#page-about .about-text').innerHTML = t('aboutBody');
-}
-
-function setLanguage(lang) {
-  currentLang = lang;
-  const isRTL = (lang === 'ar' || lang === 'ur');
-  document.documentElement.lang = lang;
-  document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
-  document.body.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-  applyTranslations();
-  document.getElementById('langSelect').value = lang;
-}
-
-function setTheme(theme) {
-  document.documentElement.setAttribute('data-theme', theme);
-  document.getElementById('themeToggle').textContent = theme === 'dark' ? '☀️' : '🌙';
-  localStorage.setItem('theme', theme);
-}
-
-function navigate(page) {
-  currentPage = page;
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  const target = document.getElementById('page-' + page);
-  if (target) target.classList.add('active');
-  document.querySelectorAll('#mainNav button').forEach(btn => btn.classList.toggle('active', btn.dataset.page === page));
-  document.getElementById('mainNav').classList.remove('active');
-  if (page === 'about') document.querySelector('#page-about .about-text').innerHTML = t('aboutBody');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function bookDelivery() { window.open('https://deliveryforless.vercel.app', '_blank'); }
-
-async function handleContact(e) {
-  e.preventDefault();
-  const form = e.target;
-  const status = document.getElementById('formStatus');
-  status.style.display = 'block';
-  status.textContent = "Sending...";
-  const response = await fetch(form.action, {
-    method: form.method,
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  });
-  if (response.ok) {
-    status.textContent = t('formSuccess');
-    form.reset();
-  } else {
-    status.textContent = "Oops! There was a problem.";
-  }
-  setTimeout(() => { status.style.display = 'none'; }, 5000);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
-  setTheme(savedTheme || 'light');
-  setLanguage('en');
-  document.querySelectorAll('#mainNav button').forEach(btn => btn.addEventListener('click', () => navigate(btn.dataset.page)));
-  document.getElementById('hamburgerBtn').addEventListener('click', () => document.getElementById('mainNav').classList.toggle('active'));
-  document.getElementById('langSelect').addEventListener('change', (e) => setLanguage(e.target.value));
-  document.getElementById('themeToggle').addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
-});
+    faqTitle: "الأسئلة الشائعة", faq1Q: "كيف أحجز توصيلاً؟", faq1A: "عبر المنصة الإلكترونية، أو زر حجز توصيل، أو بالاتصال ب
