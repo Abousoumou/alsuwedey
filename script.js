@@ -69,6 +69,15 @@ const translations = {
     assignedOrders: "Assigned Orders", tableAddress: "Address", tableAction: "Action", acceptBtn: "Accept", deliveredBtn: "Mark Delivered",
     footerCompany: "Company", footerContact: "Contact", footerCoverage: "Coverage", footerFollow: "Follow Us", footerLegal: "Legal",
     privacyPolicy: "Privacy Policy", termsOfService: "Terms of Service", allRights: "All rights reserved.", sloganFooter: "Delivering Trust, Every Mile.",
+    fleetTitle: "Our Growing Fleet & Specialized Training",
+    fleetP1: "In the fast-paced world of logistics, having the right vehicle for the right job is not just an advantage; it is a necessity. At ALSUWEDEY Delivery Services, we take immense pride in our rapidly expanding fleet, which is growing from day to day to meet the diverse and evolving demands of our clients across the UAE. We do not believe in a one-size-fits-all approach. Instead, we offer a versatile, multi-modal transportation network designed to handle any requirement, no matter how unique or challenging it may be.",
+    fleetP2: "Our fleet is a testament to our commitment to flexibility and efficiency. It includes a wide array of vehicles tailored to specific delivery needs. For rapid, nimble deliveries through congested urban areas, we utilize motorbikes and scooters. For eco-friendly, short-distance drops, our bicycles are always in action. When it comes to last-mile deliveries that require a human touch and navigation through pedestrian-heavy zones or specific building complexes, our dedicated DA walkers step in. For larger loads, we deploy cars and heavy-duty pickups. And for massive, industrial-scale hauling, our trucks are ready to move.",
+    fleetP3: "Currently, we have more than 145 elements of our fleet actively in action across the region. This impressive number is not a static figure; it is a dynamic metric that reflects our continuous investment in our operational capacity. As our client base grows, our fleet grows with it. We are constantly onboarding new vehicles, upgrading our existing models, and expanding our reach to ensure that we never compromise on delivery times or service quality, regardless of the order volume.",
+    fleetP4: "But having a large fleet is only half the battle. The true engine of our operations is our people. We insist on a deep, large, and highly specific training program for our Delivery Agents (DAs). We believe that a driver is not just a person behind the wheel; they are the face of our company, the custodians of our clients goods, and the final link in the supply chain. Therefore, our training goes far beyond basic driving skills.",
+    fleetP5: "Our DA training program is comprehensive and multifaceted. It covers advanced defensive driving techniques, ensuring the safety of the cargo, the driver, and the public. It includes rigorous customer service modules, teaching our agents how to handle delicate situations, communicate effectively, and maintain a professional demeanor at all times. We also provide specific training on handling sensitive items, such as pharmaceuticals and fragile floral arrangements, ensuring they reach their destination in pristine condition.",
+    fleetP6: "Furthermore, our DAs are trained extensively in local geography and navigation. While we rely on cutting-edge routing technology, we believe that a driver who knows the streets, the traffic patterns, and the hidden shortcuts of Abu Dhabi and Dubai is an invaluable asset. This local knowledge allows us to bypass unexpected road closures and traffic jams, ensuring that our delivery windows are consistently met, even during peak hours.",
+    fleetP7: "We are proud to say that our operations currently cover all of Abu Dhabi and Dubai extensively. Whether it is a residential drop in a quiet neighborhood or a bulk delivery to a bustling commercial hub, our trained DAs and diverse fleet are equipped to handle it all. We are not just delivering parcels; we are delivering peace of mind, backed by a robust infrastructure and a team that is trained to perfection.",
+    daTitle: "Driver (DA) Joining Request", partnerTitle: "Partnership Request",
     privacyTitle: "Privacy Policy",
     privacyBody: `<p>Last updated: November 2026</p><p>At ALSUWEDEY Delivery Services LLC, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services.</p>
     <h3>1. Information We Collect</h3><p>We collect information you provide directly to us, such as your name, email address, phone number, delivery addresses, and payment information when you book a delivery or contact us.</p>
@@ -347,6 +356,17 @@ function handleContact(e) {
 /* ============================================================
    3. INITIALISATION
 ============================================================ */
+function openMapModal(orderId, pickup, dropoff) {
+  document.getElementById("modalOrderId").textContent = "#" + orderId;
+  document.getElementById("modalPickup").textContent = pickup;
+  document.getElementById("modalDropoff").textContent = dropoff;
+  document.getElementById("mapModal").classList.add("active");
+}
+
+function closeMapModal() {
+  document.getElementById("mapModal").classList.remove("active");
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -373,3 +393,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize About page content on load
   document.querySelector('#page-about .about-text').innerHTML = t('aboutBody');
 });
+
+// Modal Logic for Driver Dashboard
+function openMapModal(orderId, pickup, dropoff) {
+  document.getElementById('modalOrderId').textContent = '#' + orderId;
+  document.getElementById('modalPickup').textContent = pickup;
+  document.getElementById('modalDropoff').textContent = dropoff;
+  document.getElementById('mapModal').classList.add('active');
+}
+
+function closeMapModal() {
+  document.getElementById('mapModal').classList.remove('active');
+}
